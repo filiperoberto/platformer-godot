@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://grama.tres" type="TileSet" id=2]
+[ext_resource path="res://ParallaxBackground.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Inimigo.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Passagem.tscn" type="PackedScene" id=5]
+
+[node name="Cena2" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 103.588, 334.217 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 524296, 0, 0, 524297, 1, 0, 524298, 1, 0, 524299, 1, 0, 524300, 1, 0, 524301, 2, 0, 655352, 0, 0, 655353, 1, 0, 655354, 1, 0, 655355, 1, 0, 655356, 1, 0, 655357, 1, 0, 655358, 2, 0, 720897, 0, 0, 720898, 1, 0, 720899, 1, 0, 720900, 1, 0, 720901, 1, 0, 720902, 2, 0, 917519, 0, 0, 917520, 1, 0, 917521, 1, 0, 917522, 1, 0, 917523, 1, 0, 917524, 1, 0, 917525, 1, 0, 917526, 2, 0 )
+
+[node name="ParallaxBackground" parent="TileMap" instance=ExtResource( 3 )]
+
+[node name="Inimigo" parent="." instance=ExtResource( 4 )]
+position = Vector2( 543.974, 434.72 )
+
+[node name="Inimigo2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 310.286, 243.013 )
+
+[node name="Passagem" parent="." instance=ExtResource( 5 )]
+position = Vector2( 42.1096, 316.047 )
+cenas = "res://World.tscn"

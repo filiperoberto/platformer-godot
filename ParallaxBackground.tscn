@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Canvas-Parallax-Mountains.jpg" type="Texture" id=1]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 1024, 576 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 2.27374e-13, 3.8147e-06 )
+scale = Vector2( 0.853333, 0.847059 )
+texture = ExtResource( 1 )
+centered = false
